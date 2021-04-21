@@ -1,0 +1,93 @@
+
+    body{
+        padding: 0;
+        margin: 0;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(255, 255, 255);
+
+    }
+ a{
+     text-decoration: none;
+    
+ }
+
+    header{
+        width: 100%;
+        height: 60px;
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: flex-end;
+        height: inherit;
+        
+       
+    }
+
+    header nav .nav-right-section{
+        width: 250px;
+        height: auto;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+       
+    }
+
+    nav .nav-right-section a {
+        margin-right: 12px;
+        color: #000000;
+        margin-right: 19px;
+    }
+
+  
+
+    nav .nav-right-section .menu-icon{
+          background-image: url('https://image.flaticon.com/icons/png/128/17/17704.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: 25px;
+          height: 25px;
+    }
+
+ nav .nav-right-section .button{
+         width: 65px;
+         height: 35px;
+         border-radius: 6px;
+         margin-left: 10px;
+         
+ }
+
+ main{
+     margin-top:150px; /*esto hace que baje el contenido del main, separarlo de la barra de navegacion*/
+     text-align: center;
+                 
+ }
+
+ main .main-logo{
+     margin-top: -100px;
+     width: 272px;
+     height: 92px;
+     margin: 0 auto;
+     margin-bottom: 50px;
+     
+ }
+
+ main .main-logo img{
+     width: 400px;
+ }
+ main .main-input{
+      width: 530px;
+      margin: 0 auto;
+      margin-bottom: 35px;
+  
+ }
+
+ main .main-input-container{
+     width: 525px;
+     border-radius: 100px;
+     border: 1px solid #dfe1e5;
+ }
