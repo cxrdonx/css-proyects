@@ -1,93 +1,122 @@
+/*
+1. Posicionamiento
+2. Modelo caja(Box model)
+3. Tipografia
+4. visuales
+5. otros
+*/
 
-    body{
-        padding: 0;
-        margin: 0;
-        font-size: 13px;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(255, 255, 255);
-
-    }
- a{
-     text-decoration: none;
-    
+:root{
+    --bitcion-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --grey: #bababa;
+    --off-shite: #faf8f7;
+    --just-shite: #fff;
+}
+*{
+    margin: 0;    /*reiniciando estilos que le agregan los navegadores*/
+    padding: 0;
+    box-sizing: border-box;
  }
 
-    header{
-        width: 100%;
-        height: 60px;
-    }
-    
-    header nav{
-        display: flex;
-        justify-content: flex-end;
-        height: inherit;
-        
-       
-    }
-
-    header nav .nav-right-section{
-        width: 250px;
-        height: auto;
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-        margin-right: 30px;
-       
-    }
-
-    nav .nav-right-section a {
-        margin-right: 12px;
-        color: #000000;
-        margin-right: 19px;
-    }
-
-  
-
-    nav .nav-right-section .menu-icon{
-          background-image: url('https://image.flaticon.com/icons/png/128/17/17704.png');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: contain;
-          width: 25px;
-          height: 25px;
-    }
-
- nav .nav-right-section .button{
-         width: 65px;
-         height: 35px;
-         border-radius: 6px;
-         margin-left: 10px;
-         
+ html{
+     font-size: 62.5%;
+     font-family: 'DM sans', sans-serif;
  }
 
- main{
-     margin-top:150px; /*esto hace que baje el contenido del main, separarlo de la barra de navegacion*/
+ header{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;
+     min-width: 230px;
+     height: 334px;
      text-align: center;
-                 
+     background: linear-gradient(207.8deg, #201E1C 16.9%, #F7931A 100%);
  }
 
- main .main-logo{
-     margin-top: -100px;
-     width: 272px;
-     height: 92px;
-     margin: 0 auto;
-     margin-bottom: 50px;
-     
+ header img{
+     width: 150px;
+     height: 24px;
+     margin-top: 60px;
+     align-self: center;
  }
 
- main .main-logo img{
-     width: 400px;
+ .header--title-container{
+     width: 90%;
+     min-width: 288px;
+     max-width: 900px;
+     height: 218px;
+     margin-top: 40px;
+     text-align: center;
+     align-self:center;
  }
- main .main-input{
-      width: 530px;
-      margin: 0 auto;
-      margin-bottom: 35px;
-  
+ 
+ .header--title-container h1{
+     font-size: 2.4rem;
+     font-weight: bold;
+     line-height: 2.6rem;
+     color: var(--just-shite);
  }
 
- main .main-input-container{
-     width: 525px;
-     border-radius: 100px;
-     border: 1px solid #dfe1e5;
+ .header--title-container p{
+     font-size: 1.4rem;
+     margin-top: 25px;
+     font-weight: 500;
+     line-height: 1.8rem;
+     color: var(--soft-orange);
  }
+
+ .header--title-container .header-button{
+     position: absolute;
+     left: calc(50% - 118px);
+     top: 270px;
+     display: block;
+     margin-top: 35px;
+     padding: 15px;
+     width: 229px;
+     height: 48px;
+     background-color: var(--off-shite);
+     box-shadow: 0px 4px 8px rgba(89,71,30,0.16);
+     border: none;
+     border-radius: 5px;
+     font-size: 1.4rem;
+     font-weight: bold;
+     text-decoration: none;
+     color: var(--black);
+ }
+
+ .header--title-container span{
+     display: inline-block;
+     width: 13px;
+     height: 8px;
+     margin-left: 10px;
+     background-image: url('/icons/down-arrow.svg');
+ }
+ 
+main{
+    width: auto;
+    height: auto;
+    background-color: var(--off-shite);
+
+}
+
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container--title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
