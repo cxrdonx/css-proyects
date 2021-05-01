@@ -273,3 +273,19 @@ main{
     margin: 0 auto;
     margin-top: 50px;
 }
+
+.product-detail--title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-shite);
+}
+
+.product-detail--title p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
